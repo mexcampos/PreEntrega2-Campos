@@ -23,3 +23,10 @@ input[type=text], select, textarea {
     background-color: #45a049;
   }
 }
+
+.mapouter{
+  height:500px;
+  width:600px;
+  justify-content: center;
+  align-items: center;
+}
