@@ -46,73 +46,49 @@
     </div>
   </nav>
 
-  <!-- Introducción -->
-  <section class="bg-dark text-light p-5 text-center">
-    <div class="container">
-      <div class="d-sm-flex align-items-center justify-content-between">
-        <div>
-          <h1>Una compañia de <span class="text-warning">inversiones seguras</span> para todo el mundo</h1>
-          <p class="lead my-4">Fields Investment Company, es una firma de inversiones argentinas con más de 10 años de experiencia generando oportunidades de negocios a nivel mundial.</p>
-          <a href="#"><button class="btn btn-primary btn-lg">Más info</button></a>
-        </div>
-        <img class="img-fluid w-50 d-none d-sm-block" src="img/tn-2.jpg" alt="">
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Suscripción de Correo Electrónico -->
-  <section class="bg-primary text-light p-5">
-    <div class="container">
-      <div class="d-md-flex justify-content-between align-items-center">
-        <h3 class="mb-3 mb-md-0">Sucríbete a nuestro newsletter</h3>
-
-        <div class="input-group correo-input">
-          <input
-          type="text"
-          class="form-control"
-          placeholder="tucorreo@email.com.ar"
-          >
-          <button
-          class="btn btn-dark"
-          type="button"
-          id="button-addon2">
-          Enviar
-          </button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Sección de Estrategias -->
+  <!-- Sección de contacto -->
   <section class="p-5">
-    <h2 class="text-dark p-5 text-center"> Áreas de Inversión </h2>
     <div class="container">
-      <div class="row text-center">
-        <div class="col-md p-2">
-          <div class="card bg-dark text-light">
-            <img src="img/mert-kahveci-cRxPJMEio-Q-unsplash.jpg" alt="" class="img-fluid d-sm-block">
-            <h3 class="p-2">Concesiones</h3>
-            <p>Consideramos que son una asociación entre el sector público y la empresa privada con el fin de velar por la eficiencia en la prestación de servicios, en un ámbito concreto, para lograr una mejora en la calidad de vida de los ciudadanos. Las concesiones permiten movilizar capital y conocimientos técnicos privados para complementar los recursos públicos, realizando nuevas inversiones en infraestructuras y servicios sin aumentar la deuda pública.</p>
-          </div>
-        </div>
-        <div class="col-md p-2">
-          <div class="card bg-dark text-light">
-            <img src="img/sharon-mathews-VlZLR_Jagqw-unsplash.jpg" alt="" class="img-fluid d-sm-block" width="640px" height="960px">
-            <h3 class="p-2">Servicios</h3>
-            <p>El crecimiento sostenido de los servicios es un rasgo característico de la mayoría de las economías. Nos centramos en el desarrollo de proyectos llave en mano relacionados con el outsourcing de funciones del sector público. En estos proyectos se realiza el diseño, suministro, construcción, puesta en marcha y operación. Buscamos combinar de forma eficiente y rentable la actividad de proyectos integrados con las actividades de apoyo al sector público que aportan mayor recurrencia y estabilidad.</p>
-          </div>
-        </div>
-        <div class="col-md p-2">
-          <div class="card bg-dark text-light">
-            <img src="img/simone-hutsch-CzyFl-oAty0-unsplash.jpg" alt="" class="img-fluid d-sm-block">
-            <h3 class="p-2">Tecnología</h3>
-            <p>Nos enfocamos en lograr rendimientos a través de la innovación tecnológica y el crecimiento de los ingresos; Las tecnologías digitales están cambiando la cara de los negocios. Pero no todas las empresas evolucionan al mismo ritmo. La inversión en tecnologías de la información debe ir acorde a las necesidades de la empresa, enfocadas a los resultados del negocio, la innovación y la mejora continua.
-            </p>
-          </div>
-        </div>
-      </div>
+        <div class="row g-4">
+            <div class="col-md">
+                <h2 class="text-center p-3">Información de Contacto</h2>
+                <ul class="list-group list-group-flush lead">
+                    <li class="list-group-item">
+                        <span class="fw-bold">Ubicación: </span> Belgrano 50, CABA.
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Teléfono: </span> (11) 4455-7896
+                    </li>
+                    <li class="list-group-item">
+                        <span class="fw-bold">Email: </span> info@fic.com.ar
+                    </li>
+                </ul>
+            </div>
+        </div>   
     </div>
+
+    <div class="container">
+        <h2 class="text-center p-3"> Dejános tu mensaje</h2>
+        <form action="action_page.php">
+        <label for="fname">Tu nombre</label>
+        <input type="text" id="fname" name="firstname" placeholder="Juan">
+        <label for="lname">Tu apellido</label>
+        <input type="text" id="lname" name="lastname" placeholder="Pérez">
+        <label for="country">Tu país</label>
+        <select id="country" name="country">
+            <option value="australia">Argentina</option>
+            <option value="canada">Brasil</option>
+            <option value="usa">Uruguay</option>
+        </select>
+        <label for="subject">Mensaje</label>
+        <textarea id="subject" name="subject" placeholder="Aquí dejanos tus inquietudes que nos vamos a comunicar con vos en a la brevedad" style="height:200px"></textarea>
+
+        <input type="submit" value="Enviar" class="btn btn-dark">
+    </form>
+</div>
   </section>
+
+
 
   <!-- Footer -->
   <footer class="p-5 bg-dark text-white text-center position-relative">
