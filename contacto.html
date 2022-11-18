@@ -10,13 +10,14 @@
   crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <title>Fields Investment Company</title>
 </head>
 <body>
   <!-- Barra de navegación -->
-  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3">
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top" data-aos="fade-down">
     <div class="container">
-      <a href="#" class="navbar-brand">Fields Investment Company</a>
+      <a href="index.html" class="navbar-brand">Fields Investment Company</a>
 
       <button
       class="navbar-toggler"
@@ -44,10 +45,10 @@
         </ul>
       </div>
     </div>
-  </nav>
+  </nav> <br> <br> <br>
 
-  <!-- Sección de contacto -->
-  <section class="p-5">
+  <!-- Sección de info de contacto -->
+  <section class="p-5" data-aos="zoom-in">
     <div class="container">
         <div class="row g-4">
             <div class="col-md">
@@ -65,29 +66,43 @@
                 </ul>
             </div>
         </div>
-    <div class="container">
-        <h2 class="text-center p-5"> Dejános tu mensaje</h2>
-        <form action="action_page.php">
-        <label for="fname">Tu nombre</label>
-        <input type="text" id="fname" name="firstname" placeholder="Juan">
-        <label for="lname">Tu apellido</label>
-        <input type="text" id="lname" name="lastname" placeholder="Pérez">
-        <label for="country">Tu país</label>
-        <select id="country" name="country">
-            <option value="australia">Argentina</option>
-            <option value="canada">Brasil</option>
-            <option value="usa">Uruguay</option>
-        </select>
-        <label for="subject">Mensaje</label>
-        <textarea id="subject" name="subject" placeholder="Aquí dejanos tus inquietudes que nos vamos a comunicar con vos en a la brevedad" style="height:200px"></textarea>
-
-        <input type="submit" value="Enviar" class="btn btn-dark">
-        </form>
-    </div>
   </section>
 
+  <!-- Sección de formulario -->
+  <form class="row g-3 p-5" data-aos="zoom-in">
+    <div class="col-md-6">
+      <label for="inputEmail4" class="form-label">Email</label>
+      <input type="email" class="form-control" id="inputEmail4" placeholder="juan@gmail.com">
+    </div>
+    <div class="col-md-6">
+      <label for="inputName" class="form-label">Tu nombre</label>
+      <input type="name" class="form-control" id="inputName" placeholder="Juan Pérez">
+    </div>
+    <div class="col-12">
+      <label for="inputAddress" class="form-label">Mensaje</label>
+      <input type="text" class="form-control" id="inputText" placeholder="Tu Menasje" text-area="100px">
+    </div>
+    <div class="col-md-6">
+      <label for="inputCity" class="form-label">Ciudad</label>
+      <input type="text" class="form-control" id="inputCity" placeholder="Córdoba">
+    </div>
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">País</label>
+      <select id="inputState" class="form-select">
+        <option selected>Tu país</option>
+        <option>Argentina</option>
+        <option>Brasil</option>
+        <option>Uruguay</option>
+        <option>Otro</option>
+      </select>
+    </div>
+    <div class="col-12">
+      <button type="submit" class="btn btn-dark">Enviar</button>
+    </div>
+  </form>
+
   <!-- Preguntas Frecuentes -->
-  <section id="questions" class="p-5">
+  <section id="questions" class="p-5" data-aos="fade-up">
     <div class="container">
       <h2 class="text-center mb-4">Frequently Asked Questions</h2>
       <div class="accordion accordion-flush" id="questions">
@@ -100,7 +115,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-one"
             >
-              Where exactly are you located?
+              Donde tienen sus oficinas?
             </button>
           </h2>
           <div
@@ -109,13 +124,7 @@
             data-bs-parent="#questions"
           >
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
+              Nuestras oficinas están ubicadas en el microcentro porteño. Están perfectamente diseñadas para que disfrutes cada segundo mientras nosotros nos encargamos de hacer crecer tus ahorros.
             </div>
           </div>
         </div>
@@ -128,7 +137,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-two"
             >
-              How much does it cost to attend?
+              Qué costo tiene?
             </button>
           </h2>
           <div
@@ -137,13 +146,7 @@
             data-bs-parent="#questions"
           >
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
+              Nuestros costos son variables y dependen del tipo de servicio que contrates pero siempre están atados a tus ganancias. Esto quiere decir que solo te vamos a cobrar si vos ganás.
             </div>
           </div>
         </div>
@@ -156,7 +159,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-three"
             >
-              What do I need to Know?
+              Cuánto es el minimo para invertir?
             </button>
           </h2>
           <div
@@ -165,13 +168,7 @@
             data-bs-parent="#questions"
           >
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
+              Debido a que queremos brindarte el mejor servicio posible hemos determinado como mínimo para armar una cartera diversificada el de US$ 250.000.
             </div>
           </div>
         </div>
@@ -184,7 +181,7 @@
               data-bs-toggle="collapse"
               data-bs-target="#question-four"
             >
-              How Do I sign up?
+              Cómo me hago cliente?
             </button>
           </h2>
           <div
@@ -193,50 +190,13 @@
             data-bs-parent="#questions"
           >
             <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
-            </div>
-          </div>
-        </div>
-        <!-- Item 5 -->
-        <div class="accordion-item">
-          <h2 class="accordion-header">
-            <button
-              class="accordion-button collapsed"
-              type="button"
-              data-bs-toggle="collapse"
-              data-bs-target="#question-five"
-            >
-              Do you help me find a job?
-            </button>
-          </h2>
-          <div
-            id="question-five"
-            class="accordion-collapse collapse"
-            data-bs-parent="#questions"
-          >
-            <div class="accordion-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam
-              beatae fuga animi distinctio perspiciatis adipisci velit maiores
-              totam tempora accusamus modi explicabo accusantium consequatur,
-              praesentium rem quisquam molestias at quos vero. Officiis ad
-              velit doloremque at. Dignissimos praesentium necessitatibus
-              natus corrupti cum consequatur aliquam! Minima molestias iure
-              quam distinctio velit.
+              Acércate a nuestras oficinas, llámanos o dejános un correo electrónico que nosotros nos ponemos en contacto con vos!
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
-
-
-
 
   <!-- Footer -->
   <footer class="p-5 bg-dark text-white text-center position-relative">
@@ -253,5 +213,7 @@
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/app.js"></script>
 </body>
 </html>
